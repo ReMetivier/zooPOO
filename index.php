@@ -75,7 +75,7 @@ $coefrevelry = $baguera->revelry + $kiki->revelry + $kitty->revelry;
         <?php $total = $total + $money  ?>
         <?php $timer++; ?>
         <p>il y avait <?=$customers ?> et vous avez gagnez <?= $money ?> euros. Ce qui vous fait <?=$total?> euros en <?=$timer?> jours</p><br>
-        <?php if($timer >=30):?>
+        <?php if($timer%30 = 0):?>
             <?php $total = $total - $tim->pay - $james->pay;?>
             <p> il vous reste <?= $total ?> après avoir payé vos employés </p>
         <?php endif;?>
